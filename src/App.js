@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useEffect, useState, } from "react";
 import axios from "axios";
 import "./App.css";
 
@@ -19,9 +19,14 @@ function App() {
       console.log(e, "Error occured");
     }
   };
-  useEffect(() => {
-    fetchImages();
-  })
+ useEffect(() => {
+   fetchImages();
+ 
+   
+ }, [])
+ 
+  
+
   
   return (
     <div className="App">
